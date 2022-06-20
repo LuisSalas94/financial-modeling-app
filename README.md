@@ -5,7 +5,7 @@
     
 ## Built With
 
-- HTML
+- HTML.md
 - CSS
 - JavaScript
 - React
