@@ -8,6 +8,7 @@ import Company from "../company/Company";
 const Home = () => {
 	const companiesState = useSelector((state) => state.homeReducer);
 	const dispatch = useDispatch();
+	const [search, setSearch] = useState("");
 
 	useEffect(() => {
 		dispatch(fetchCompaniesFromURL());
@@ -24,20 +25,25 @@ const Home = () => {
 				</div>
 				<input
 					type="text"
+					onChange={(e) => setSearch(e.target.value)}
 					placeholder="Search your favorite company..."
 					className="input"
 				/>
 				<div className="section">
-					{companiesState.map((company) => (
-						<Company
-							key={company.symbol}
-							symbol={company.symbol}
-							name={company.name}
-							change={company.change}
-							price={company.price}
-							changesPercentage={company.changesPercentage}
-						/>
-					))}
+					{companiesState
+						.filter((company) =>
+							company.name.toLowerCase().includes(search.toLowerCase())
+						)
+						.map((company) => (
+							<Company
+								key={company.symbol}
+								symbol={company.symbol}
+								name={company.name}
+								change={company.change}
+								price={company.price}
+								changesPercentage={company.changesPercentage}
+							/>
+						))}
 				</div>
 			</div>
 		</section>
