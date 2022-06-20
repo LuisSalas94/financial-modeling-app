@@ -19,6 +19,8 @@ html {
 
 :root {
 	--background-color: #304b7e;
+	--background-color-two: #578ef4;
+	--background-color-three: #4369b2;
 	--header-color: #4e7acc;
 	--white-color: #fff;
 	--orange-color: #e67e22;
@@ -32,7 +34,7 @@ body {
 	font-size: 1.8rem;
 }
 
-/* ************************** Header Styling ************************** */
+/* ************************** Header Section Styling ************************** */
 header {
 	position: sticky;
 	top: 0;
@@ -88,4 +90,108 @@ header .nav-ul .icons button {
 
 header .nav-ul .icons button:hover {
 	color: var(--orange-color);
+}
+
+/* ************************** Company Section Styling ************************** */
+.company-container .item {
+	color: var(--white-color);
+}
+
+.company-container .item .subtitle {
+	background-color: var(--background-color);
+	text-align: center;
+	font-size: 1.4rem;
+	padding: 1rem 0;
+	font-weight: 900;
+}
+
+.company-container .item .input {
+	width: 100%;
+	outline: none;
+	padding: 1.5rem 1rem;
+	border-radius: 5px;
+	border: none;
+}
+
+.company-container .item .header {
+	background-color: var(--background-color-two);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1.5rem 3rem;
+}
+
+.company-container .item .header .title {
+	padding: 1.5rem 3rem;
+	text-align: center;
+}
+
+.company-container .item .header .title .icon {
+	font-size: 12rem;
+}
+
+.company-container .item .header h1 {
+	font-size: 2rem;
+}
+
+.company-container .item .section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.company-container .item .section .company-container {
+	width: 50%;
+	padding: 2rem;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.company-container .item .section .company-container:hover {
+	transform: scale(1.04);
+}
+
+.company-container .item .section .company-container h2 {
+	font-size: 1.5rem;
+	margin: 3px 0;
+}
+
+.company-container .item .section .company-container .icons {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.company-container .item .section .company-container .icons .stats {
+	color: var(--white-color);
+	font-size: 4rem;
+}
+
+.company-container .item .section .company-container .icons .arrow {
+	color: var(--white-color);
+	font-size: 2.5rem;
+}
+.company-container .item .section .company-container .icons .arrow:hover {
+	color: var(--orange-color);
+}
+
+.company-container .item .section .company-container .info {
+	text-align: right;
+	font-size: 1.5rem;
+}
+
+.company-container .item .section .company-container:nth-child(4n + 1) {
+	background-color: var(--background-color-three);
+}
+
+.company-container .item .section .company-container:nth-child(4n + 4) {
+	background-color: var(--background-color-three);
+}
+
+/******* Media Queries *******/
+@media screen and (max-width: 1024px) {
+	html {
+		padding: 0;
+		font-size: 55.5%;
+	}
 }
