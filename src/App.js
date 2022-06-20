@@ -1,21 +1,26 @@
 /* eslint-disable */
 import "./App.css";
-//react router
+//React router
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-//components
+//Components
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Details from "./components/details/Details";
+//Redux
+import { Provider } from "react-redux";
+import store from "./redux/configureStore";
 
 function App() {
 	return (
-		<BrowserRouter>
-			<Header />
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/details/:idCompany" element={<Details />} />
-			</Routes>
-		</BrowserRouter>
+		<Provider store={store}>
+			<BrowserRouter>
+				<Header />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/details/:idCompany" element={<Details />} />
+				</Routes>
+			</BrowserRouter>
+		</Provider>
 	);
 }
 
