@@ -1,6 +1,5 @@
 /* eslint-disable */
 import React from "react";
-import { ImStatsDots } from "react-icons/im";
 
 const DetailsCompany = ({ company }) => {
 	const {
@@ -83,6 +82,25 @@ const DetailsCompany = ({ company }) => {
 			</li>
 		</ul>
 	);
+};
+
+DetailsCompany.propTypes = {
+	company: PropTypes.shape({
+		name: PropTypes.string.isRequired,
+		price: PropTypes.number.isRequired,
+		currency: PropTypes.string.isRequired,
+		description: PropTypes.string.isRequired,
+		ceo: PropTypes.string.isRequired,
+		industry: PropTypes.string.isRequired,
+		sector: PropTypes.string.isRequired,
+		country: PropTypes.string.isRequired,
+		phone: PropTypes.string.isRequired,
+		address: PropTypes.string.isRequired,
+		city: PropTypes.string.isRequired,
+		state: PropTypes.string.isRequired,
+		fullTimeEmployees: PropTypes.string.isRequired,
+		image: PropTypes.any.isRequired,
+	}).isRequired,
 };
 
 export default DetailsCompany;
