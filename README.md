@@ -1,16 +1,31 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Financial Modeling App
-
+Financial Modeling App is a mobile web application that shows financial data.
+Users can filter data by any parameter, when a user clicks on a specific company the app will take 
+you to another page to show specific data about that company.
     
 ## Built With
 
-- HTML.md
+- HTML
 - CSS
 - JavaScript
 - React
 - Redux
 - React Router
+  
+## Learning objectives
+- Use React documentation.
+- Use React components.
+- Use React props.
+- Use React Router.
+- Connect React and Redux.
+- Handle events in a React app.
+- Write integration tests with a React testing library.
+- Use styles in a React app.
+- Use React life cycle methods.
+- Apply React best practices and language style guides in code.
+- Use store, actions and reducers in React.
 
 
 ## Instructions
@@ -32,19 +47,24 @@ $ npm start # or yarn start
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://financial-modeling.netlify.app/)
 
-## Author
+## Loom Video
+[Video Link](https://www.loom.com/share/0ba54e89d2e14b43887ca9f92504df74)
 
+## Author 👤
 
 - GitHub: [@LuisSalas94](https://github.com/LuisSalas94)
 - LinkedIn: [Fernando Salas](https://www.linkedin.com/in/luisfernandosalasgave/)
+- Medium: [Fernando Salas](https://medium.com/@luisfernandosalasg)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
-
 Feel free to check the [issues page](../../issues/).
+
+## Acknowledgments 📚 
+Original design by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 
 ## Show your support
 
