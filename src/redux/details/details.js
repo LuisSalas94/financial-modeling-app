@@ -34,7 +34,6 @@ export const fetchDetailsFromURL = (symbol) => async (dispatch) => {
 			name: company.companyName,
 			price: company.price,
 			currency: company.currency,
-			website: company.website,
 			description: company.description,
 			ceo: company.ceo,
 			industry: company.industry,
@@ -45,6 +44,7 @@ export const fetchDetailsFromURL = (symbol) => async (dispatch) => {
 			city: company.city,
 			state: company.state,
 			fullTimeEmployees: company.fullTimeEmployees,
+			image: company.image,
 		});
 	});
 	dispatch(fetchDetails(companieDetails));
