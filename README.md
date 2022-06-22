@@ -50,7 +50,7 @@ $ npm start # or yarn start
 [Live Demo Link](https://financial-modeling.netlify.app/)
 
 ## Loom Video
-[Video Link](https://www.loom.com/share/0ba54e89d2e14b43887ca9f92504df74)
+[Video Link](https://www.loom.com/share/53833ad719164c09bc1026b99daf2e7c)
 
 ## Author 👤
 
