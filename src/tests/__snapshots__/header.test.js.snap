@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders succesfully 1`] = `
+<h1
+  class="title"
+>
+  Financial Modeling Prep
+</h1>
+`;
