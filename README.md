@@ -49,9 +49,6 @@ $ npm start # or yarn start
 
 [Live Demo Link](https://financial-modeling.netlify.app/)
 
-## Loom Video
-[Video Link](https://www.loom.com/share/53833ad719164c09bc1026b99daf2e7c)
-
 ## Author 👤
 
 - GitHub: [@LuisSalas94](https://github.com/LuisSalas94)
