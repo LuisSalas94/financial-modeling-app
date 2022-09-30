@@ -13,6 +13,10 @@ you to another page to show specific data about that company.
 - React
 - Redux
 - React Router
+
+## Full Screen Views
+<img src="src/images/img1.png" alt="Full Screen View" />
+<img src="src/images/img2.png" alt="Full Screen View" />
   
 ## Learning objectives
 - Use React documentation.
